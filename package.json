@@ -1,0 +1,22 @@
+{
+  "name": "mobile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DesperadoH/mobile_demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DesperadoH/mobile_demo/issues"
+  },
+  "homepage": "https://github.com/DesperadoH/mobile_demo#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.1"
+  }
+}
