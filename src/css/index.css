@@ -1,4 +1,5 @@
 html {
+  width: 100%;
   height: 100%;
   overflow: hidden;
 }
@@ -7,6 +8,7 @@ body {
   -webkit-user-select: none;
   -webkit-text-size-adjust: 100%;
   height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 body * {
@@ -33,25 +35,165 @@ h3 {
 a {
   text-decoration: none;
 }
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
 #header {
-  position: relative;
+  position: absolute;
+  width: 10rem;
+  top: 0;
+  left: 0;
   height: 1.37333333rem;
   background-color: #ef3239;
+  font-size: 20px;
+  border-bottom: 1px solid gray;
+  box-sizing: border-box;
+  text-align: center;
 }
 #header a {
   position: absolute;
   display: block;
-  text-align: center;
-  height: 1.17333333rem;
-  line-height: 1.17333333rem;
+  height: 1.37333333rem;
+  line-height: 1.37333333rem;
   top: 0;
-  background-color: yellow;
 }
 #header #task {
   width: 1.70666667rem;
   left: 0;
+  color: white;
+}
+#header #task span {
+  font-size: 0.50666667rem;
 }
 #header #refresh {
   width: 1.61333333rem;
   right: 0;
+}
+#header #refresh span {
+  font-size: 0.48rem;
+}
+#header span {
+  color: #fff;
+}
+#header h1 {
+  font-size: 0.53333333rem;
+  color: #fff;
+  line-height: 1.17333333rem;
+}
+#header h1 span {
+  font-size: 0.34666667rem;
+  margin-right: 0.21333333rem;
+}
+#nav {
+  height: 1.4rem;
+  width: 10rem;
+  position: absolute;
+  top: 1.37333333rem;
+  left: 0;
+  background-color: #fdfdfd;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #b0b0b0;
+  box-sizing: border-box;
+  font-size: 0;
+}
+#nav a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25%;
+  height: 1.37333333rem;
+  line-height: 1.37333333rem;
+  color: #848689;
+  text-align: center;
+  font-size: 0.48rem;
+}
+#nav a span {
+  font-size: 0.48rem;
+}
+#nav .active {
+  color: #f23838 !important;
+}
+#nav a:nth-child(1) span {
+  vertical-align: middle;
+}
+#nav a:nth-child(4) span {
+  vertical-align: -0.08rem;
+}
+#nav #spanBox {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  width: 0.50666667rem;
+}
+#nav #spanBox span {
+  float: left;
+  width: 0.50666667rem;
+  font-size: 0.4rem;
+}
+#nav #spanBox .glyphicon-chevron-down {
+  left: -0.04rem;
+  top: -0.05333333rem;
+}
+#warp {
+  position: absolute;
+  top: 2.77333333rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+}
+#shopping {
+  position: relative;
+}
+#shopping li {
+  height: 3.74666667rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid grey;
+}
+#shopping .item {
+  display: block;
+  padding-top: 0.30666667rem;
+  padding-bottom: 0.29333333rem;
+  padding-left: 0.30666667rem;
+  height: 3.13333333rem;
+  font-size: 0;
+}
+#shopping .item-img {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  width: 3.13333333rem;
+  border-radius: 0.13333333rem;
+  margin-right: 0.4rem;
+}
+#shopping .item-info {
+  display: inline-block;
+  width: 5.76rem;
+  font-size: 30px;
+}
+#shopping .title,
+#shopping .price,
+#shopping .review {
+  display: block;
+}
+#shopping .title {
+  padding-top: 0.06666667rem;
+  font-size: 0.37333333rem;
+  line-height: 0.58666667rem;
+  color: #333;
+}
+#shopping .price {
+  font-size: 0.50666667rem;
+  line-height: 0.85333333rem;
+  color: red;
+}
+#shopping .review {
+  line-height: 0.62666667rem;
+  color: grey;
+  font-size: 0.37333333rem;
 }

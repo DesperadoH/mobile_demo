@@ -201,3 +201,34 @@ filter: grayscale(100%);
 其他：
 *怪异盒模型  *font-face  *bootstrap字体组件
 
+
+
+
+
+## 四、弹性盒模型 --box
+
+注意在使用弹性盒模型的时候父元素必须加
+display:box 或 display: inline-box
+
+box-orient   定义盒模型的主轴方向
+horizontal   水平显示
+vertical     垂直方向
+
+* box-direction 元素排列顺序
+
+normal  正序
+reverse 反序
+
+* box-pack 主轴方向富裕的空间管理：
+
+start   所有子元素在盒子左侧显示，富裕空间在右侧
+end     所有子元素在盒子右侧显示，富裕空间在左侧
+center  所有子元素居中
+justify 富裕空间在子元素之间平均分布
+
+
+* box-align 侧轴方向富裕的空间管理：
+
+start  所有子元素在顶
+end    所有子元素在底
+center 所有子元素居中
